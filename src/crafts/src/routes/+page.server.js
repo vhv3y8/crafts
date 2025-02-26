@@ -1,6 +1,7 @@
 import fs from "fs/promises"
 import path from "path"
 import { compareDesc, parseISO } from "date-fns"
+import { base } from "$app/paths"
 
 const projectRoot = path.join(process.cwd(), "../..")
 const infoGenDir = path.join(projectRoot, "crafts-info-gen")
@@ -28,7 +29,7 @@ export async function load({ params }) {
         })
         .then((res) => JSON.parse(res))
         .then((info) => {
-          info.thumbnail = `/thumbnails/${name}-${info.thumbnail}`
+          info.thumbnail = `${base}/thumbnails/${name}-${info.thumbnail}`
           return info
         }),
     ),
