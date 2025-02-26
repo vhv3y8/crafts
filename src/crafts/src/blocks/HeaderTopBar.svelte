@@ -1,6 +1,7 @@
 <script>
 import CheckboxLabel from "../components/CheckboxLabel.svelte"
 import { options } from "$lib/state.svelte"
+import { base } from "$app/paths"
 </script>
 
 <!-- HTML -->
@@ -11,9 +12,11 @@ import { options } from "$lib/state.svelte"
       <CheckboxLabel
         inputId="showDescription"
         bind:checked={options.showDescription}
-        imgSrc={options.isDarkMode
-          ? "/assets/description-dark.svg"
-          : "/assets/description.svg"}
+        imgSrc={`${base}${
+          options.isDarkMode
+            ? "/assets/description-dark.svg"
+            : "/assets/description.svg"
+        }`}
         name="설명"
       />
     </li>
@@ -21,9 +24,9 @@ import { options } from "$lib/state.svelte"
       <CheckboxLabel
         inputId="showUsed"
         bind:checked={options.showUsed}
-        imgSrc={options.isDarkMode
-          ? "/assets/code-dark.svg"
-          : "/assets/code.svg"}
+        imgSrc={`${base}${
+          options.isDarkMode ? "/assets/code-dark.svg" : "/assets/code.svg"
+        }`}
         name="기술"
       />
     </li>
@@ -42,9 +45,11 @@ import { options } from "$lib/state.svelte"
         }}
       />
       <img
-        src={options.isDarkMode
-          ? "/assets/darkmode-dark.svg"
-          : "/assets/darkmode.svg"}
+        src={`${base}${
+          options.isDarkMode
+            ? "/assets/darkmode-dark.svg"
+            : "/assets/darkmode.svg"
+        }`}
         alt=""
         width="24"
         height="24"
