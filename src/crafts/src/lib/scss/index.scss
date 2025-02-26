@@ -1,0 +1,38 @@
+@use "fonts";
+
+body {
+  font-family: "Nanum Square";
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* a {
+  color: #444;
+  font-weight: bold;
+  text-decoration: 2px underline #444;
+  padding: 0.2em;
+
+  &:hover {
+    background-color: #555;
+    color: white;
+    text-decoration-color: white;
+  }
+  &:active {
+    background-color: #444;
+  }
+} */
+
+::selection {
+  color: #222;
+  background: darksalmon;
+}
+body.darkmode ::selection {
+  /* color: #ddd;
+  background: #131467; */
+  /* background: #7acde9; */
+  color: #ddd;
+  background: #633935;
+}

@@ -1,0 +1,7 @@
+{
+  "name": "Chord Quiz",
+  "description": "코드 <-> 음이름 퀴즈를 풀어볼 수 있는 웹페이지",
+  "used": ["nodejs"],
+  "thumbnail": "1.png",
+  "date": "2023-11-09T15:00:00Z"
+}

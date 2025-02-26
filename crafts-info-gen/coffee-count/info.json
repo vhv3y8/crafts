@@ -1,0 +1,11 @@
+{
+  "name": "Coffee Count",
+  "description": "마신 커피 잔 수를 기록하게 해주는 PWA 앱",
+  "used": [
+    "workbox",
+    "idb",
+    "date-fns"
+  ],
+  "thumbnail": "1.png",
+  "date": "2024-08-24T15:00:00Z"
+}

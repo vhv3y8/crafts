@@ -1,0 +1,9 @@
+{
+  "name": "Tab Group Shortcut",
+  "description": "탭 그룹을 생성/삭제하는 Ctrl+G 단축키를 추가해주는 확장 프로그램",
+  "used": [
+    "chrome api"
+  ],
+  "thumbnail": "1.png",
+  "date": "2024-02-17T15:00:00Z"
+}

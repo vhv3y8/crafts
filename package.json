@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "cd src/crafts && pnpm build",
+    "editor": "cd src/editor && pnpm editor",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

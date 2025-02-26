@@ -1,0 +1,12 @@
+{
+  "name": "localmdserver",
+  "description": "nodejs로 만든 로컬 마크다운 뷰어 및 탐색기",
+  "used": [
+    "sveltekit",
+    "express",
+    "showdown",
+    "prism"
+  ],
+  "thumbnail": "1.png",
+  "date": "2025-02-24T15:00:00Z"
+}

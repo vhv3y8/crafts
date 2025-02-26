@@ -1,0 +1,9 @@
+{
+  "name": "Rename Tabs with F2",
+  "description": "F2 키를 눌러 탭들의 이름을 재설정하게 해주는 확장 프로그램",
+  "used": [
+    "chrome api"
+  ],
+  "thumbnail": "1.png",
+  "date": "2024-11-07T15:00:00Z"
+}

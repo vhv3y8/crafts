@@ -1,0 +1,12 @@
+{
+  "name": "crawl-my-velog",
+  "description": "Velog에 올린 글들을 마크다운, 이미지 파일로 다운로드하게 해주는 스크립트",
+  "used": [
+    "puppeteer",
+    "turndown",
+    "dotenv",
+    "axios"
+  ],
+  "thumbnail": "1.png",
+  "date": "2025-01-22T15:00:00Z"
+}

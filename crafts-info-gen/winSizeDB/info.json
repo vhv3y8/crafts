@@ -1,0 +1,9 @@
+{
+  "name": "winSizeDB",
+  "description": "팝업으로 창의 크기를 저장하고 적용하게 해주는 확장 프로그램",
+  "used": [
+    "chrome api"
+  ],
+  "thumbnail": "1.png",
+  "date": "2023-08-18T15:00:00Z"
+}

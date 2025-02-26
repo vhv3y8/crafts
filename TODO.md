@@ -1,6 +1,9 @@
-- SSG 블로그 (Sveltekit)
-  - 메인 페이지
-  - 상세 페이지?
-- 에디터 (Svelte, Express)
-  - 이미지 드롭
-  - 폴더, 파일 생성
+1. SSG 블로그 (Sveltekit)
+
+- 메인 페이지
+- 상세 페이지?
+
+2. 에디터 (Svelte, Express)
+
+- 이미지 드롭
+- 폴더, 파일 생성
