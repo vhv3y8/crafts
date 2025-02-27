@@ -1,0 +1,20 @@
+@use "fonts";
+
+body {
+  font-family: "Nanum Square";
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+::selection {
+  background-color: #2b5235;
+  color: lightsalmon;
+
+  body.darkmode & {
+    background-color: lightsalmon;
+    color: #2b5235;
+  }
+}

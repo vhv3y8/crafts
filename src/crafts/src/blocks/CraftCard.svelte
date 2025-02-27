@@ -44,7 +44,8 @@ li {
   }
 
   img {
-    max-width: max(200px, calc(100% - 2em));
+    /* max-width: max(200px, calc(100% - 2em)); */
+    max-width: calc(100% - 2em);
   }
 
   p {
@@ -82,6 +83,7 @@ li {
     &.used {
       font-size: 1.2em;
       font-family: "Ubuntu Light Italic";
+      text-align: center;
     }
   }
 }

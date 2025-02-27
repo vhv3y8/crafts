@@ -1,11 +1,9 @@
 {
   "name": "vhv3y8/crafts",
-  "description": "에디터 페이지와 같이 만든 스벨트킷 SSG 블로그",
+  "description": "스벨트킷으로 만든 SSG 블로그와 파일 에디터",
+  "date": "2025-02-27T00:00:00.000Z",
   "used": [
-    "sveltekit",
-    "svelte",
-    "express"
+    "sveltekit"
   ],
-  "thumbnail": "1.png",
-  "date": "2025-02-26T15:00:00Z"
+  "thumbnail": "1.png"
 }
