@@ -1,0 +1,11 @@
+{
+  "name": "unraveling",
+  "description": "소스코드 공부한 거 정리해놓는 블로그",
+  "date": "2025-03-03T00:00:00.000Z",
+  "used": [
+    "sveltekit",
+    "showdown",
+    "highlight.js"
+  ],
+  "thumbnail": "1.png"
+}
