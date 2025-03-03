@@ -54,8 +54,9 @@ li {
 
     &.name {
       font-size: 1.2em;
-      font-weight: bold;
+      /* font-weight: bold; */
       align-self: flex-start;
+      font-family: "Ubuntu";
 
       /* a {
         padding: 0.2em;

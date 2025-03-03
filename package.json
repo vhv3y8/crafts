@@ -6,7 +6,7 @@
   "scripts": {
     "build": "cd src/crafts && pnpm build",
     "editor": "cd src/editor && pnpm dev",
-    "preview": "cd src/crafts && pnpm dev",
+    "preview": "cd src/crafts && pnpm preview",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

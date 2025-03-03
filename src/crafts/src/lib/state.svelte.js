@@ -1,5 +1,5 @@
 export const options = $state({
-  isDarkMode: false,
+  isDarkMode: true,
 
   showDescription: false,
   showUsed: true,

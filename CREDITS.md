@@ -1,3 +1,8 @@
+### Fonts
+
+- [네이버 나눔 스퀘어](https://hangeul.naver.com/font)
+- [Ubuntu, Ubuntu Light Italic](https://fonts.google.com/specimen/Ubuntu)
+
 ### Svg
 
 - Darkmode

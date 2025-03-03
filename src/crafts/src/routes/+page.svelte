@@ -2,6 +2,7 @@
 import HeaderTopBar from "../blocks/HeaderTopBar.svelte"
 import CraftCard from "../blocks/CraftCard.svelte"
 import { options } from "$lib/state.svelte"
+import { base } from "$app/paths"
 
 const { data } = $props()
 
@@ -16,59 +17,22 @@ $effect(() => {
 
 <!-- HTML -->
 
-<div class="container">
-  <p
-    style:margin-top="0"
-    style:font-family="Ubuntu Light Italic"
-    style:font-size="1.2em"
-    style:user-select="none"
-  >
-    vhv3y8/crafts
-  </p>
+<HeaderTopBar />
 
-  <HeaderTopBar />
+<ul id="craftList">
+  {#each data.infos as { name, description, used, thumbnail }}
+    <CraftCard {name} {description} {used} {thumbnail} />
+  {/each}
+</ul>
 
-  <ul id="craftList">
-    {#each data.infos as { name, description, used, thumbnail }}
-      <CraftCard {name} {description} {used} {thumbnail} />
-    {/each}
-  </ul>
-
-  <footer>
-    inspired by <a
-      href="https://leroyrosales.com/"
-      target="_blank"
-      style:text-decoration="3px underline currentColor">leroyrosales.com</a
-    >
-  </footer>
-</div>
+<footer>
+  <a href={`${base}/CREDITS.md`}>CREDITS.md</a> / inspired by
+  <a href="https://leroyrosales.com/" target="_blank">leroyrosales.com</a>
+</footer>
 
 <!-- SCSS -->
 
 <style lang="scss">
-:global(body) {
-  margin: 0;
-  padding: 1.5rem;
-  height: calc(100vh - 3rem);
-
-  display: flex;
-  flex-flow: column nowrap;
-}
-
-:global(body.darkmode) {
-  background-color: #121212;
-  color: #ddd;
-}
-
-div.container {
-  width: min(100%, 1200px);
-  flex: 1 0 auto;
-  margin: auto;
-
-  display: flex;
-  flex-flow: column nowrap;
-}
-
 ul#craftList {
   flex: 1 0 auto;
 
@@ -88,5 +52,9 @@ ul#craftList {
 
 footer {
   margin-block: 1em;
+
+  a {
+    text-decoration: 3px underline currentColor;
+  }
 }
 </style>
