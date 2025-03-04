@@ -1,9 +1,10 @@
 {
   "name": "Save Tabs as Text & File",
   "description": "탭들을 JSON 또는 TXT로 저장하고 열게 해주는 확장 프로그램",
+  "date": "2024-09-17T00:00:00.000Z",
   "used": [
+    "svelte",
     "chrome api"
   ],
-  "thumbnail": "1.png",
-  "date": "2024-09-16T15:00:00Z"
+  "thumbnail": "1.png"
 }
