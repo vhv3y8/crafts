@@ -1,13 +1,20 @@
 <script>
 import { options } from "$lib/state.svelte"
 
-const { name, description, used, thumbnail } = $props()
+const { name, description, used, thumbnail, openImgModal } = $props()
 </script>
 
 <!-- HTML -->
 
 <li>
-  <img src={thumbnail} alt="" />
+  <button
+    type="button"
+    onclick={() => {
+      openImgModal(thumbnail)
+    }}
+  >
+    <img src={thumbnail} alt="" />
+  </button>
 
   {#if options.showDescription}
     {#if name}
@@ -33,7 +40,6 @@ li {
   align-items: center;
   gap: 0.5em;
 
-  /* border: 1px solid #999; */
   padding: 0.5em;
 
   &:hover {
@@ -43,9 +49,18 @@ li {
     background-color: rgba(255, 255, 255, 0.1);
   }
 
-  img {
-    /* max-width: max(200px, calc(100% - 2em)); */
-    max-width: calc(100% - 2em);
+  button {
+    outline: none;
+    border: none;
+    background: transparent;
+
+    display: inline-flex;
+    justify-content: center;
+
+    img {
+      /* max-width: calc(100% - 2em); */
+      max-width: 100%;
+    }
   }
 
   p {
@@ -54,31 +69,8 @@ li {
 
     &.name {
       font-size: 1.2em;
-      /* font-weight: bold; */
       align-self: flex-start;
       font-family: "Ubuntu";
-
-      /* a {
-        padding: 0.2em;
-
-        &:hover {
-          text-decoration: 3px underline black;
-        }
-        &:active {
-          text-decoration: none;
-          background-color: #333;
-          color: white;
-        }
-
-        :global(body.darkmode) &:hover {
-          text-decoration: 3px underline #ccc;
-        }
-        :global(body.darkmode) &:active {
-          text-decoration: none;
-          background-color: #ccc;
-          color: #111;
-        }
-      } */
     }
 
     &.used {

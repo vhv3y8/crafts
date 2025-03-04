@@ -5,6 +5,8 @@ import { options } from "$lib/state.svelte"
 import { base } from "$app/paths"
 
 const { data } = $props()
+let modalImgSrc = $state("")
+let modalContainer = $state(null)
 
 $effect(() => {
   if (options.isDarkMode) {
@@ -13,6 +15,12 @@ $effect(() => {
     document.body.classList.remove("darkmode")
   }
 })
+
+function openImgModal(src) {
+  console.log("openImgModal", src)
+  modalImgSrc = src
+  modalContainer.style.display = "block"
+}
 </script>
 
 <!-- HTML -->
@@ -21,9 +29,20 @@ $effect(() => {
 
 <ul id="craftList">
   {#each data.infos as { name, description, used, thumbnail }}
-    <CraftCard {name} {description} {used} {thumbnail} />
+    <CraftCard {name} {description} {used} {thumbnail} {openImgModal} />
   {/each}
 </ul>
+
+<button
+  bind:this={modalContainer}
+  id="modalContainer"
+  style:display="none"
+  onclick={(e) => {
+    modalContainer.style.display = "none"
+  }}
+>
+  <img id="modal" src={modalImgSrc} alt="" />
+</button>
 
 <footer>
   <a href={`${base}/CREDITS.md`}>CREDITS.md</a> / inspired by
@@ -48,6 +67,28 @@ ul#craftList {
   list-style: none;
 
   overflow-y: auto;
+}
+
+button#modalContainer {
+  outline: none;
+  border: none;
+  background: inherit;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  display: grid;
+  place-items: center;
+
+  backdrop-filter: blur(5px);
+
+  img {
+    max-width: calc(100% - 3em);
+  }
 }
 
 footer {
