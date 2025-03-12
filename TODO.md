@@ -9,3 +9,5 @@
     - 엔터키로 submit 막기 **
     - used 엔터키 & submit ctrl+enter **
 - Refactoring
+
+- CREDITS 업데이트: 폰트,
