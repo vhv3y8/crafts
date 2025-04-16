@@ -1,0 +1,9 @@
+{
+  "name": "extension-lichess-puzzle",
+  "description": "Lichess 퍼즐용 편의성 확장 프로그램",
+  "date": "2025-04-16T00:00:00.000Z",
+  "used": [
+    "plasmo"
+  ],
+  "thumbnail": "1.png"
+}
