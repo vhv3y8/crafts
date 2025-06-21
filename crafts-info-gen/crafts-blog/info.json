@@ -1,0 +1,9 @@
+{
+  "name": "vhv3y8/crafts-blog",
+  "description": "만드려고 생각하게 된 이유를 기록해놓은 블로그",
+  "date": "2025-06-22T00:00:00.000Z",
+  "used": [
+    "sveltekit"
+  ],
+  "thumbnail": "1.png"
+}
